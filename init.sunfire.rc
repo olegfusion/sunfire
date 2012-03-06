@@ -496,6 +496,7 @@ service hciattach /system/bin/bt_init_wrapper.sh
     disabled
     oneshot
 
+
 on property:init.svc.hciattach=stopping
     exec /system/bin/bt_init -stop
 

@@ -30,6 +30,9 @@ PRODUCT_COPY_FILES += \
 
 ## (2) Also get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/moto/sunfire/sunfire-vendor.mk)
+# media profiles
+PRODUCT_COPY_FILES += \
+    device/moto/sunfire/media_profiles.xml:system/etc/media_profiles.xml
 
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
